@@ -32,4 +32,14 @@ TypeScript is a superset of JavaScript that compiles down to JavaScript.
 
 * Both are examples of what compilers do: take one language and convert into a different one. 
 
-Just-In-Time Compiler (JIT Compiler): combines a Interpreter and a Compiler together to provide optimized code at faster speeds. 
+Just-In-Time Compiler (JIT Compiler): combines a Interpreter and a Compiler together to provide optimized code at faster speeds. Sends code to the interpreter to produce bytecode and then sends code that can be optimized to the compiler. 
+
+Bytecode is NOT a native machine code; you need software such as a JavaScript engine to execute bytecode. 
+
+## Is JavaScript an Interpreted Language?
+
+Yes - initally when JS first came out. SpiderMonkey (JS Engine) interpreted JavaScript to tell our computers what to do. 
+
+No - because nowadays we use compilers to further translate and optimize our code. 
+
+Depends on implementation of JavaScript -- sometimes the code can only be compiled, only be interpreted or BOTH!
