@@ -7,3 +7,17 @@ Most Javascript interpreters use dictionary-like objects (hash function based) t
 Since the use of dictionaries to find the location of object properties in memory is so inefficient, V8 uses a different method instead: hidden classes.
 
 * Keep in mind that V8 attaches a hidden class to each and every object, and the purpose of the hidden classes is to optimize property access time.
+
+` 
+function Animal(x, y){
+    this.x = x
+    this.y = y
+}
+
+const obj1 = new Animal(1, 2)
+const obj2 = new Animal(3, 4)
+
+obj1.a = 30
+`
+
+Introducing new properties on an instance of an object deoptimizes our code -- instead of declaring properties in the constructor -- because the hidden class is created for that instance and must be changed and refers back to the original class. 
