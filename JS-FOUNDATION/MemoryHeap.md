@@ -13,3 +13,15 @@ The Memory Heap allows us to use variables to point to where the data will be st
 The V8 Engine stores variables (and its data) in memory locations for us (think cubbies) -- we do not have to do anything.
 
 
+## Garbage Collection
+
+When JavaScript allocates memory JavaScript automatically cleans up or frees up that memory space when the function (of that allocated memory) is done running. 
+
+Garbage Collection is done automatically and figures out what we need or do not need. However, Garbage Collection does not mean we do not have to pay attention to memory management of the Memory Heap.
+
+How does Garbage Collection work?
+    - uses "mark and sweep" 
+    - 'marks' what is needed
+    - 'sweeps' what is not needed
+    - if there is no reference to an object, then it is no longer needed
+
