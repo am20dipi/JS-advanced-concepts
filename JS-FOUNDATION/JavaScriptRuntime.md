@@ -33,13 +33,20 @@ Web APIs are ASYNCHRONOUS -- web APIs can perform execution(s) in the background
 
 ## Event Loop + Callback Queue
 
-When something that can only performed by the Web API comes up on the Call Stack => 
+1. When something that can only performed by the Web API comes up on the Call Stack => 
 
-the Call Stack sends it to the Web API => 
+2. The Call Stack sends it to the Web API => 
 
-the Web API performs the execution and produces the result (data) => 
+3. The Web API performs the execution and produces the result (data) => 
 
-the Web API gives the data to the Callback Queue => 
+4. The Web API gives the data to the Callback Queue => 
 
-once the Call Stack is empty, the Event Loop gives the data in the Callback Queue to the Call Stack
+5. Once the Call Stack is empty, the Event Loop gives the data in the Callback Queue to the Call Stack
 
+## JavaScript Runtime vs. JavasScript Engine
+
+If a JavaScript file is a sheet of music...
+
+The JavaScript Engine is the musician or the composer; able to read and make sense of the sheet of music.
+
+While the JavaScript Runtime is the musician with the instruments; able to read and make sense of the sheet of music AND able to play it. 
