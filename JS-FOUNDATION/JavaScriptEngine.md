@@ -43,3 +43,23 @@ Yes - initally when JS first came out. SpiderMonkey (JS Engine) interpreted Java
 No - because nowadays we use compilers to further translate and optimize our code. 
 
 Depends on implementation of JavaScript -- sometimes the code can only be compiled, only be interpreted or BOTH!
+
+
+## JavaScript is a SINGLE-THREADED Language
+
+Only one set of instructions are executed at a time!
+
+A language that only has one (1) callstack is a single-threaded language.
+
+Single-threaded === you can only put more food in your mouth when you are done chewing the current food in your mouth. 
+
+JavaScript is SYNCHRONOUS -- one thing happens at a time!
+
+## What Problems Do We See With Synchronous Code?
+
+1. Slow; less efficient runtimes
+2. A lot of executions lined up in the stack => more memory being used
+3. Cannot do multiple executions at the same time
+4. Difficult for long-running tasks
+
+
