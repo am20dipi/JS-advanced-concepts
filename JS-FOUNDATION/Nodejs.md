@@ -10,3 +10,4 @@ Global API is Node.js' global object; 'global'.
 
 Server-side platform; non-blocking.
 
+Node.js runs on a single-threaded system. 
