@@ -17,10 +17,10 @@ removeItemsFromList();
 
 
 // solution
-function removeItemsFromList2(){
+function fixStackOverflow(){
     var item = list.pop()
     if (item){
-        setTimeout(removeItemsFromList2, 0)
+        setTimeout(fixStackOverflow, 0)
     }
 }
 
