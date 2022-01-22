@@ -23,7 +23,10 @@ The behavior of moving function declarations and variables to the top of their r
 
 Hoisting is also JavaScript engine allocating memory to the (some) variables and functions during the creation phase before the execution phase -- because JavaScript runs and reads through the code multiple times. 
 
-* var -- not hoisted
-* const -- hoisted
-* let -- hoisted
+* var -- hoisted and assigned undefined
+* const -- not hoisted
+* let -- not hoisted
 * functions -- all hoisted
+* function expressions -- not hoisted when invoked; hoisted using variable name
+
+
