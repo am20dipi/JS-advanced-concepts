@@ -52,3 +52,28 @@ var sayHi = function(){
 // this will be hoisted because we are calling the variable --
 // -- NOT invoking the function
 // hoisted and assigned 'undefined'
+
+
+// Example 5
+
+var favoriteFood = "grapes"
+
+var foodThoughts = function() {
+    console.log("My favorite food: " + favoriteFood)
+
+    var favoriteFood = "potatoes"
+
+    console.log("My NEW favorite food: " + favoriteFood)
+}
+
+foodThoughts()
+
+// since foodThoughts() is a function expression --
+// the variable foodThoughts is hoisted and assigned "undefined"
+
+// output => "My favorite food: undefined"
+//        => "My NEW favorite food: potatoes"
+
+// hoisting happens on every execution context
+
+
