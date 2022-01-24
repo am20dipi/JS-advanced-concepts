@@ -13,3 +13,28 @@ When the Global Execution Context is created, 'this' === the Global Object.
 Arrow functions binds 'this' to the object. 
 
 
+## Call()
+
+Call() => invokes the function
+ * .call() === ()
+
+Call() also allows methods to be borrowed  from other objects to use on an object ==> less code; DRY. 
+
+EXAMPLE:
+    `obj1.sayHi.call(obj2)`
+
+* Now obj2 has access to function sayHi() even though sayHi() is obj1's function. 
+
+## Apply()
+
+Apply() => invokes the function
+ * .call() === .apply() === ()
+
+Apply() does the same thing as call() except it can take an array of parameters. 
+
+EXAMPLE:
+    `obj1.sayHi.call(obj2, [50, 30, 20])`
+
+
+
+## Bind()
