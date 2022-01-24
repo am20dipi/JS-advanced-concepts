@@ -76,4 +76,5 @@ foodThoughts()
 
 // hoisting happens on every execution context
 
-
+// when a function is invoked, a new execution context is created
+    // function invocation yields 'this' keyword, arguments
