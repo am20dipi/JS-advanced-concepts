@@ -1,5 +1,7 @@
 # SCOPE
 
+What variables we have access to. 
+
 ## VARIABLE ENVIRONMENT
 
 A place where variables live in the execution context. 
@@ -15,3 +17,17 @@ Lexical Scope === Static Scope
 
 Lexical Environment === [[scope]]
 
+## Function Scope
+
+Every time we declare a function, we create a new execution context with its own variable environment. 
+
+Whenever you declare a variable in a function, the variable is visible only within the function. You can't access it outside the function. 
+
+'var' is the keyword to define variable for a function-scope accessibility.
+
+
+## Block Scope
+
+A block scope is the area within 'if', 'switch' conditions or 'for' and 'while' loops. Generally speaking, whenever you see {curly brackets}, it is a block. 
+
+In ES6, 'const' and 'let' keywords allow developers to declare variables in the block scope, which means those variables exist only within the corresponding block.
