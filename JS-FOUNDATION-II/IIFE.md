@@ -17,3 +17,7 @@ Immediately Invoked Function Expression
 * All variables are scoped inside the function block. 
 
 * Allows us to declare private variables that cannot be accessed within the global scope. 
+
+* Enables us to attach private data to a function.
+
+* Reduces pollution in Global Execution Context.
