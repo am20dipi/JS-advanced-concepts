@@ -17,7 +17,7 @@ JavaScript has an operator 'typeof' that tells us the type of a piece of data:
    * `typeof [1, 2, 3]` =>  object
    * `typeof {}` =>  object
 
-Languages can be Statically Typed or Dynamically Typed. 
+
 
 Symbol value creates something unique; it is useful in individually identifying pieces of data. Usually used for object properties.
 
@@ -68,3 +68,8 @@ A few examples:
 * Array()
 
 
+### Languages can be Statically Typed or Dynamically Typed
+
+Static => upon declaration of a variable having to also claim what type of data type the variable's value will be; statically typed languages perform type checking at compile-time. 
+
+Dynamic => perform type checking at run-time; does not require you to declare the data types of your variables before you use them. 
