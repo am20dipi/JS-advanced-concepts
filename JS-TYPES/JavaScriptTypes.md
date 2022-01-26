@@ -43,6 +43,7 @@ Primitive data types have Object Wrappers:
 
 JavaScript secretly (under the hood) wrap objects around primitive data types. 
 
+Primitive types are IMMUTABLE... they cannot really be modified without being removed from memory and reassigned. 
 
 
 ## Non-Primitive Types
@@ -66,3 +67,42 @@ A few examples:
 * Set()
 * Array()
 
+## Pass By Value
+
+You are making a copy in memory of the actual value.
+
+Example:
+
+```js 
+var a = 1
+var b = a
+```
+
+When the JavaScript engine sees 'b' it copies the primitive value from variable 'a' and now references it in variable 'b'. But 'b' creates its own location in memory. 
+
+So, both 'a' and 'b' still remain their OWN primitive value types. They are not connected. 
+
+
+## Pass By Reference 
+
+Example:
+
+```js
+let yoshi = {
+    name: 'Yoshi',
+    age: 12
+}
+
+let yoshiBaby = yoshi
+yoshiBaby.age = 27
+console.log(yoshi)
+console.log(yoshiBaby)
+```
+
+The console log will show both objects rendering the same name and same age (27), despite only calling on 'yoshiBaby' to change the age property. 
+
+Objects in JavaScript are stored in memory; we do NOT copy the values, we just reference the existing object and its values. There are no copies. 
+
+Pass By Reference saves space in memory since there are not multiple versions or copies. However, it makes modification difficult. 
+
+Pass By Reference also applies to arrays since arrays are objects in JavaScript. 
