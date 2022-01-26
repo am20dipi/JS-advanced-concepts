@@ -70,6 +70,14 @@ A few examples:
 
 ### Languages can be Statically Typed or Dynamically Typed
 
-Static => upon declaration of a variable having to also claim what type of data type the variable's value will be; statically typed languages perform type checking at compile-time. 
+Static => upon declaration of a variable, statically typed languages also require a claim to what data type the variable's value will be (example: string, integer, boolean); statically typed languages perform type-checking at compile-time. 
 
-Dynamic => perform type checking at run-time; does not require you to declare the data types of your variables before you use them. 
+Statically typed languages are less efficent; they slow down compile time and slow down the time it takes to write code. However, statically typed languages produce less bugs. 
+
+
+Dynamic => upon declaration of a variable or parameters, dynamically typed languages DO NOT require a claim to what data type the variables value will be; they perform type checking at run-time; does not require you to declare the data types of your variables before you use them. 
+
+JavaScript is a dynamically-typed language.
+
+Dynamically typed languages are more efficient regarding compile time and production time. Dynamically typed languages are prone to bugs. 
+
