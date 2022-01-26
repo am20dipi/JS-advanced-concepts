@@ -106,3 +106,38 @@ Objects in JavaScript are stored in memory; we do NOT copy the values, we just r
 Pass By Reference saves space in memory since there are not multiple versions or copies. However, it makes modification difficult. 
 
 Pass By Reference also applies to arrays since arrays are objects in JavaScript. 
+
+
+
+In order to modify an existing object non-destructively, we can use Object.assign():
+
+```js
+let obj = {
+    a: 'a',
+    b: 'b',
+    c: 'c'
+}
+
+// first param => target
+// second param => where are we taking from
+let clonedObj = Object.assign({}, obj)
+clonedObj.c = 'cccc'
+
+console.log(clonedObj)
+// this should work and only change the value of 'c' in clonedObj
+
+```
+
+We could also use the spread operator: 
+
+```js
+let obj2 = {
+    a: 'a',
+    b: 'b',
+    c: 'c'
+}
+
+let clonedObj2 = {...obj2}
+console.log(clonedObj2)
+
+```
