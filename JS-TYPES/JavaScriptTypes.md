@@ -1,6 +1,6 @@
-# JavaScript Types
+# JavaScript Data Types
 
-Types are the building blocks of a language.
+Data types are the building blocks of a language.
 
 * Numbers
 * Strings
@@ -37,9 +37,15 @@ undefined => absence of variable definition; no 'return' keyword; missing proper
 
 null => absence of value
 
+Primitive data types have Object Wrappers:
+ * string => String()
+ * boolean => Boolean()
+
+JavaScript secretly (under the hood) wrap objects around primitive data types. 
 
 
-# Non-Primitive Types
+
+## Non-Primitive Types
 
 Non-Primitive: does not contain the actual value directly. 
 
@@ -48,4 +54,15 @@ Non-Primitive: does not contain the actual value directly.
 * Objects
 
 REMEMBER: arrays and functions are OBJECTS.
+
+## JavaScript Built-in Objects
+
+A few examples:
+* Math()
+* Error()
+* Number()
+* Date()
+* Map()
+* Set()
+* Array()
 
