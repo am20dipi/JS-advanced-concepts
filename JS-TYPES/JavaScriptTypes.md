@@ -97,3 +97,8 @@ return a
 ```
 
 Strongly typed languages do NOT allow the combination of different data types to a value through type coercion. 
+
+
+## TypeScript
+
+TypeScript is a language AND a superset of JavaScript. It primarily provides optional static typing, classes and interfaces. 
