@@ -141,3 +141,28 @@ let clonedObj2 = {...obj2}
 console.log(clonedObj2)
 
 ```
+
+### Shallow Cloning
+
+When objects are nested within eachother, the deeper object will not abide by cloning and all clones will destructively be affected. 
+
+Example:
+
+```js
+let obj2 = {
+    a: 'a',
+    b: 'b',
+    c: {
+        d: 'deeper object'
+    }
+}
+
+let clonedObj2 = {...obj2}
+
+obj2.c.d = 'what will happen?'
+console.log(clonedObj2)
+console.log(obj2)
+
+// the console will log both clonedObj2 and obj2 with the updated 'd' property. 
+
+```
