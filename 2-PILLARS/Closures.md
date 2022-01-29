@@ -42,3 +42,17 @@ STEPS:
 * The variables are shoved into the closure box and not removed because JavaScript sees that the variables are referenced by another function inside of it. 
 
 * Because of closure, the JavaScript Engine makes sure that the function has access to all of the variables outside of the function. 
+
+* The JavaScript Engine keeps all of the variables declared outside of the inner most function in case the inner most function is called. 
+
+* JavaScript is lexically AND statically scoped -- when it looks through our code the first time, it can see what needs to be closured even before we run the code. 
+
+* Lexical Scope => where we write the function matters; not where we call the function. 
+
+Example:
+
+```js
+const sayHello = (string) => (name) => (name2) => console.log(`${string} ${name} ${name2}`)
+
+sayHello('hi')('tim')('becca')
+```
