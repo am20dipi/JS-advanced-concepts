@@ -56,3 +56,10 @@ const sayHello = (string) => (name) => (name2) => console.log(`${string} ${name}
 
 sayHello('hi')('tim')('becca')
 ```
+
+## Closures + Memory
+
+Closures can be very memory efficient. 
+
+Closures allow for encapsulation. 
+
