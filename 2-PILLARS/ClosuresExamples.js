@@ -16,17 +16,43 @@ function init(){
 init()
 //console.log(view)
 
-// Solution
+// MY solution
 
 let view;
 function initialize(){
-    view = 'forest landscape'
-    function displayView(){
+    return function displayView(){
+        view = 'forest landscape'
         console.log(`view has been set to ${view}`)
     }
-    return displayView
 }
 
 const myInit = initialize()
 myInit()
+myInit()
 
+// Correct solution
+
+let view;
+function correctSolution(){
+    let called = 0;
+    return function(){
+        if (called > 0){
+            return
+        } else {
+            view = 'desert landscape';
+            called++
+            console.log(`view has been set to ${view}`)
+        }
+    }
+}
+
+const initOnce = correctSolution()
+initOnce()
+initOnce()
+
+
+
+// Example 2
+
+
+// 
