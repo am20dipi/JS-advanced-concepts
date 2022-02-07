@@ -57,3 +57,17 @@ Array.prototype.map = function() {
     return arr
 }
 [1,2,3].map() // => 1,2,3hi
+
+// Prototype Exercise 4
+
+// Create our own .bind() method using either .call() or .apply()
+
+    // bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called
+
+    
+    // My Solution
+
+Function.prototype.bind = function() {
+    return 
+}
+
