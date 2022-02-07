@@ -57,7 +57,7 @@ dog.name //=> 'Zo'
 ```
 
 
-## .isPrototypeOf() Method
+### .isPrototypeOf() 
 
 `isPrototypeOf()` asks if the object passed in between parantheses inherits from the object the method is called on. It will either return true or false. 
 
@@ -70,3 +70,36 @@ animal.isPrototypeOf(dog) // => true
 
 dog.isPrototypeOf(animal) // => false
 ```
+
+
+### .hasOwnProperty() 
+
+Only execute what is in the code block, if the object has its own property; not properties or methods inherited from up the Prototype chain. 
+
+```js
+
+for (let prop in dog){
+    if (dog.hasOwnProperty(prop)){
+        console.log(prop)
+    }
+}
+
+// => name
+```
+
+## Why Is Prototypal Inheritance Useful?
+
+- Objects sharing prototypes means that the same properties or methods of various objects point to the same place in memory => more efficient. 
+
+- Saves space in memory.
+
+- DRY code => less repetitious code. 
+
+
+## NULL
+
+The prototype of the base Object() object is NULL.  That is the end of the Prototype Chain. 
+
+## CALL BIND APPLY
+
+Call(), bind() and apply() are inherited to functions from the Function() object via the Prototype chain. Therefore, any function declared will have access to call(), bind() and apply() since the function inherits from the Function() object. 
