@@ -29,6 +29,15 @@ Since instance 'array' inherits from Array[] Object, it has access to Object() o
 
 Same thing goes for instances of the Function() Object. 
 
+
+`someFunction.__proto__ === Function.prototype`
+`someObject.__proto__ === Object.prototype`
+`someArray.__proto__ === Array.prototype`
+
+.__proto__ points to the prototype of the Object it inherits from. 
+
+
+
 ## Create the Prototype Chain
 
 ```js
@@ -103,3 +112,4 @@ The prototype of the base Object() object is NULL.  That is the end of the Proto
 ## CALL BIND APPLY
 
 Call(), bind() and apply() are inherited to functions from the Function() object via the Prototype chain. Therefore, any function declared will have access to call(), bind() and apply() since the function inherits from the Function() object. 
+
