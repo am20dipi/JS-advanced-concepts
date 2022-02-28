@@ -113,3 +113,9 @@ The prototype of the base Object() object is NULL.  That is the end of the Proto
 
 Call(), bind() and apply() are inherited to functions from the Function() object via the Prototype chain. Therefore, any function declared will have access to call(), bind() and apply() since the function inherits from the Function() object. 
 
+# SUMMARY
+Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+
+
+
+
