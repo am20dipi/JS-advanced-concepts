@@ -29,3 +29,20 @@ class Fairy extends Character {
 const fiona = new Fairy('Fiona', 'water', 'good fairy')
 fiona // => Fairy { name: 'Fiona', power: 'water', type: 'good fairy' }
 fiona.attack() // => "Fiona attacks with water"
+
+
+
+class Ogre extends Character {
+    constructor(name, power, color){
+        super(name, power)
+        this.color = color
+    }
+
+    usePower(){
+        return this.name + ' uses ' + this.power
+    }
+}
+
+const shrek = new Ogre('Shrek', 'strength', 'green')
+// => Ogre { name: 'Shrek', power: 'strength', color: 'green' }
+shrek.usePower() // => "Shrek uses strength"
