@@ -31,4 +31,5 @@ function pure(array){
 
 // In this example, our exampleArray2 does not get modified
 // If we were to call exampleArray2 after invoking the pure() function
-// it is still intact
+// it is still intact.
+
