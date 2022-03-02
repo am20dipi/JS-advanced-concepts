@@ -55,3 +55,13 @@ Either way, if we pass the invocation of a() to b() or just pass in 7 to b(), th
 
 ## IDEMPOTENCE
 
+* Given the same input, the function always does what we expect it to do. 
+
+* An function can be invoked multiple times without changing the result beyond the initial application.
+    * Example: If you delete a user via button, the initial click is the only one that matters. 
+    * But clicking the button there afterward does not undo it. 
+
+* Helps with code predictability. 
+
+
+
