@@ -19,7 +19,7 @@
    - given the same input, the same output is produced.
 2. Immutability
    - Not changing the state; instead making copies of the state and returning the new state every time. 
-   
+
 
 
 ## IMPERATIVE v. DECLARATIVE
@@ -61,3 +61,49 @@ Code Example:
 array.forEach(item => console.log(item))
 
 ```
+
+
+## HIGHER ORDER FUNCTIONS (FIRST CLASS Citizens)
+
+* Functions in JavaScript are First-Class Citizens:
+   * Functions can be passed as a param to another function. 
+   * Functions can be the return value of a function. 
+   * Functions can be a property of an object. 
+
+
+* Higher Order Functions:
+   * Takes one or more functions are arguments.
+   * Returns a function as a result (aka CALLBACK).
+
+
+
+## CLOSURES
+
+* Mechanism for containing state. 
+
+* A closure is created when a function accesses a variable declared outside of the function scope. 
+
+Example:
+```js
+
+const closure = function() {
+   let count = 0
+   return function increment(){
+      count++
+      return count
+   }
+}
+
+closure()
+// => output: [Function: increment]
+
+closure()()
+// => output: 1
+
+const incrementFn = closure()
+incrementFn()
+// => output: 1
+incrementFn()
+// => output: 2
+```
+
