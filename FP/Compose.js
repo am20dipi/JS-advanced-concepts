@@ -18,7 +18,7 @@ multiplyBy3AndAbsolute(-44)
 
 
 
-// Pipe: same thing as compose, except it goes right to left. 
+// Pipe: same thing as compose, except it goes LEFT to RIGHT. 
 
 const pipe = (f, g) = (data) => g(f(data))
 
