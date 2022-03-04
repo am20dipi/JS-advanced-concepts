@@ -15,4 +15,7 @@
 
 * Seen in functional programming.
 * Focuses on what the data is and what it has. 
+* Smaller pieces that are combined to create the desired output. 
+* Avoiding side effects by writing pure functions
+
 
