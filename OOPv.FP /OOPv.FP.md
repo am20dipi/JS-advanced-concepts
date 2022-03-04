@@ -9,6 +9,7 @@
 * avoiding side effects using pure functions. 
 * creating copies of data as to not modify the original data. 
 * declarative => describes what the code is doing.
+* FP says: separate data and behavior for clarity. 
 
 
 
@@ -21,3 +22,4 @@
 * side effects are plentiful
 * constructors (creating instances from classes)
 * imperative => describes how. 
+* OOP says: bring together the data and the behavior in a single location called an 'object' or 'class'.
