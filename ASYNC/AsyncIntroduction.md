@@ -5,7 +5,14 @@
 
 ## JAVASCRIPT
 
-* JavaScript is Single Threaded language that can be non-blocking => 
+* JavaScript is Single Threaded language that can be non-blocking => single threaded means one (1) call stack.
+
+* Running code on a single thread (or single call stack) reduces bugs.
+
+
+## SYNCHRONOUS
+
+* executing one line of code at a time; a succeeding line cannot run until the preceding line is done executing and is removed from the call stack. 
 
 
 ### What is a Program?
@@ -23,7 +30,7 @@
 
 * Memory Leak => limited memory space + unused global varibles.
 
-* Call Stack => FIFO (first in first out)
+* Call Stack => FILO (first in last out)
 
 
 
