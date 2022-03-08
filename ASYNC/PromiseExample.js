@@ -38,3 +38,8 @@ Promise.all(urls.map(url => {
     console.log(results[1])
     console.log(results[2])
 }).catch(() => console.log('error!'))
+
+
+// FETCH returns a PROMISE!!!!!
+// Promise either resolves or rejects => then we receive the data
+

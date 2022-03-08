@@ -10,6 +10,10 @@ Promises kind of serve the same function as callbacks. Promises are new with ES6
 
 Promises are great for async JS; promises happen in the background. 
 
+A Promise can either succeed or fail once -- this is useful for async behavior. 
+
+Fetch returns a PROMISE. 
+
 ## Create a Promise
 
 ```js
