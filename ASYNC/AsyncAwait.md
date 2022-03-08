@@ -8,6 +8,10 @@ The ultimate goal of ASYNC AWAIT is to make code look synchronous while it is in
 
 ASYNC AWAIT is syntactic sugar => ASYNC AWAIT is a promise under the hood. 
 
+ASYNC AWAIT cleans up the fetch request and makes it more readable. But it is really more personal reference. 
+
+
+
 
 
 

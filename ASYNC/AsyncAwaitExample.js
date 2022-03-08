@@ -25,8 +25,7 @@ async function playerStart(){
 }
 
 
-
-
+// ASYNC AWAIT with fetch pointing to an endpoint
 async function fetchUsers(){
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await response.json()
@@ -36,3 +35,46 @@ async function fetchUsers(){
 fetchUsers()
 // Promise { <pending> }
 // output => users object
+
+
+
+// ASYNC AWAIT + Promise.all()
+
+const urls = [
+    'https://jsonplaceholder.typicode.com/todos',
+    'https://jsonplaceholder.typicode.com/albums',
+    'https://jsonplaceholder.typicode.com/posts'
+]
+
+const getData = async function(){
+    const [ todos, albums, posts ] = await Promise.all(urls.map(url => {
+        fetch(url).then(response => response.json())
+    }))
+    console.log(todos)
+    console.log(albums)
+    console.log(posts)
+}
+
+getData()
+// Promise { <pending> }
+// output => todos object
+// output => albums object
+// output => posts object
+
+
+// ASYNC AWAIT + try block + catch block
+
+const getData = async function(){
+    try {
+        const [ todos, albums, posts ] = await Promise.all(urls.map(url => {
+            fetch(url).then(response => response.json())
+        }))
+        console.log(todos)
+        console.log(albums)
+        console.log(posts)
+    } catch {
+        console.log("Error!")
+    }
+}
+
+getData()
